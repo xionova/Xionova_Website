@@ -1,0 +1,52 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    background-color: transparent; /* Allow custom background images */
+}
+
+/* Remove default styles from lists, links, and other elements */
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Ensure link color is controlled by your styles */
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input, textarea, select {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+}
+
+/* Remove focus outline in browsers */
+*:focus {
+    outline: none;
+}
+
+/* Optional: Specific styles for different browsers */
+html {
+    scroll-behavior: smooth;
+}
