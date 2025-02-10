@@ -1,10 +1,10 @@
 {
-    "theme_color":"#3cfb62",
+    "theme_color":"#000000",
     "background_color":"#ffffff",
     "icons":[{"purpose":"maskable",
     "sizes":"512x512",
-    "src":"Photos/",
-    "type":"image/png"
+    "src":"Photos/logo.png",
+    "type":"image/x-icon"
     },
     {
     "purpose":"any",
