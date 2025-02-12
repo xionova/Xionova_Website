@@ -316,3 +316,100 @@ nav a:hover::after {
 .our-work-btn:hover {
     background: #009900;
 }
+
+/*pricing*/
+.pricing h2{
+    font-family:'Saiba', sans-serif ;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #000;
+    text-align: center;
+}
+.pricing {
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.buttons button.active-btn {
+    background: #000000;
+    color: white;
+    border: none;
+}
+.pricing p {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+
+#pricing-sections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-container {
+    display: none; /* Initially hide all sections */
+    gap: 20px;
+}
+
+.pricing-container.active {
+    display: flex; /* Show the active section */
+}
+
+.pricing-card {
+    background:linear-gradient(black,rgb(87, 235, 87));
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    transition: ease-in transform 0.3s;
+}
+.pricing-card:hover{
+    transform: scale(1.05)
+}
+
+.pricing-card button {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: transform 0.8s;
+}
+.pricing-card button:hover {
+    background: white;
+    color: #000000;
+    border: none;
+}
+.features {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+.features li {
+    margin: 8px 0;
+}
