@@ -172,9 +172,7 @@ nav a:hover::after {
 /*Services*/
 
 .services {
-    text-align: center;
     padding: 50px 20px;
-    background: #ffffff;
     color: rgb(0, 0, 0);
 }
 .services h2 {
@@ -201,36 +199,63 @@ nav a:hover::after {
     margin-top: 15px;
    
 }
+.services .service-number {
+    font-size: 25px;
+    background: #9DFF00;
+    border-radius: 50%; /* Makes it a perfect circle */
+    display: inline-block; /* Prevents full-width background */
+    width: 40px; /* Controls circle size */
+    height: 40px;
+    text-align: center;
+    line-height: 40px; /* Centers the number inside */
+    font-family: 'Saiba', sans-serif;
+}
+
 .services h1{
     font-size: 16px;
-    text-decoration: underline red;
     margin-top: 20px;
     margin-bottom: 10px;
-
 }
 .service-card {
     background: #000000;
     color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 10px 0px 10px 0px;
+    clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
     text-align: center;
     width: 100%;
-    height:370px;
+    height:max-content;
     max-width: 300px;
     transition: transform 0.3s;
 }
 .service-card-1 {
+    position: relative;
     background: #ffffff;
     color: #000000;
     padding: 20px;
-    border: #000000 solid 2px;
-    border-radius: 10px;
     text-align: center;
     width: 100%;
-    height:370px;
     max-width: 300px;
+    border-radius: 10px; /* Normal rounded corners */
+    clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
     transition: transform 0.3s;
 }
+
+/* Creating the border effect */
+.service-card-1::after {
+    content: "";
+    position: absolute;
+    top: -4px; /* Adjust for border thickness */
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 10px; /* Same as .service-card */
+    clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+    z-index: -1;
+}
+
 .service-card img {
     width: 80px;
     margin-bottom: 15px;
@@ -240,16 +265,20 @@ nav a:hover::after {
     margin-bottom: 15px;
 }
 .service-card h3 {
+    margin-top: 20px;
     font-size: 20px;
     margin-bottom: 15px;
+    text-align: left;
 }
 .service-card-1 h3 {
+    margin-top: 20px;
     font-size: 20px;
+    text-align: left;
     margin-bottom: 15px;
 }
 .service-card p {
     font-size: 12px;
-    text-align: justify;
+    text-align: left;
     text-justify: inter-word;
 }
 .service-card:hover {
@@ -257,7 +286,7 @@ nav a:hover::after {
 }
 .service-card-1 p {
     font-size: 12px;
-    text-align: justify;
+    text-align: left;
     text-justify: inter-word;
 }
 .service-card-1:hover {
@@ -274,12 +303,12 @@ nav a:hover::after {
     }
 }
 .our-work-btn {
-    background: #84e811;
-    color: white;
+    background: #9DFF00;
+    color: black;
     padding: 10px 15px;
     border: none;
     margin-left: 150px;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
