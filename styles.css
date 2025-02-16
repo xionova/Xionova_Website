@@ -193,14 +193,14 @@ nav a:hover::after {
     margin-bottom: 15px;
 }
 .service-images img {
-    width: 30px;
+    width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-top: 15px;
    
 }
 .services .service-number {
-    font-size: 25px;
+    font-size: 30px;
     background: #9DFF00;
     border-radius: 50%; /* Makes it a perfect circle */
     display: inline-block; /* Prevents full-width background */
@@ -211,18 +211,11 @@ nav a:hover::after {
     font-family: 'Saiba', sans-serif;
 }
 
-.services h1{
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
 .service-card {
     background: #000000;
     color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 10px 0px 10px 0px;
-    clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
-    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
     width: 100%;
     height:max-content;
     max-width: 300px;
@@ -232,38 +225,20 @@ nav a:hover::after {
     position: relative;
     background: #ffffff;
     color: #000000;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
     width: 100%;
     max-width: 300px;
     border: 2px solid black;
     border-radius: 10px; /* Normal rounded corners */
-    clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
     transition: transform 0.3s;
 }
-
-/* Creating the border effect */
-.service-card-1::after {
-    content: "";
-    position: absolute;
-    top: -4px; /* Adjust for border thickness */
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    background: transparent;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px; /* Same as .service-card */
-    clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
-    z-index: -1;
+.content {
+    padding: 10px 30px;
 }
-
-.service-card img {
-    width: 80px;
-    margin-bottom: 15px;
-}
-.service-card-1 img {
-    width: 80px;
-    margin-bottom: 15px;
+.content h1{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .service-card h3 {
     margin-top: 20px;
@@ -306,16 +281,12 @@ nav a:hover::after {
 .our-work-btn {
     background: #9DFF00;
     color: black;
+    float: inline-end;
     padding: 10px 15px;
     border: none;
-    margin-left: 150px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
-}
-
-.our-work-btn:hover {
-    background: #009900;
 }
 
 /*pricing*/
@@ -413,4 +384,7 @@ nav a:hover::after {
 
 .features li {
     margin: 8px 0;
+}
+hr{
+    margin-bottom: 5px;
 }
