@@ -1,10 +1,9 @@
-// Add interactivity
-document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.querySelector(".cta-btn");
-    btn.addEventListener("click", function () {
-        alert("Welcome to Xionova! 🚀");
-    });
-});
+function scrollToSection() {
+    document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+}
+function scrollToPricing() {
+    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+}
 
 //Pricing section
 function showPricing(index) {
@@ -23,3 +22,5 @@ function showPricing(index) {
     });
     document.getElementById(`btn-${index}`).classList.add('active-btn');
 }
+
+showPricing(0);

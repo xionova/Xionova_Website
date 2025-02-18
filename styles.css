@@ -82,15 +82,17 @@ nav a:hover::after {
     text-decoration:none;
 }
 /* Hero Section */
+
+.landing{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 100px 50px;
-}
-
-.hero-content {
-    max-width: 50%;
 }
 
 .hero-content h1 {
@@ -124,6 +126,7 @@ nav a:hover::after {
     border-radius: 100px;
     cursor: pointer;
     transition: 0.3s;
+    margin-bottom: 40px;
 }
 
 .cta-btn:hover {
@@ -144,7 +147,7 @@ nav a:hover::after {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    margin-top: 10px;
+    margin-top: 14rem;
 }
 
 .down-logo {
@@ -172,7 +175,10 @@ nav a:hover::after {
 /*Services*/
 
 .services {
-    padding: 50px 20px;
+    padding: 10rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     color: rgb(0, 0, 0);
 }
 .services h2 {
@@ -185,6 +191,7 @@ nav a:hover::after {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
+    margin: auto;
 }
 .service-images {
     display: flex;
@@ -292,25 +299,31 @@ nav a:hover::after {
 /*pricing*/
 .pricing h2{
     font-family:'Saiba', sans-serif ;
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 40px;
-    color: #000;
+    color: black;
     text-align: center;
 }
 .pricing {
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
+    width: 900px;
+    padding: 10px 10px;
+    margin: auto;
     margin-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 100px;
 }
 
 .buttons button {
     padding: 10px 20px;
-    border: 2px solid black;
     cursor: pointer;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -345,13 +358,22 @@ nav a:hover::after {
 }
 
 .pricing-card {
-    background:linear-gradient(black,rgb(87, 235, 87));
+    background-image: url('Photos/pricingBackground.png');
     color: white;
     padding: 20px;
     border-radius: 10px;
     width: 350px;
     height: 400px;
-    text-align: center;
+    margin-top: 50px;
+    transition: ease-in transform 0.3s;
+}
+.pricing-card-top {
+    background-image: url('Photos/pricingBackground.png');
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
     transition: ease-in transform 0.3s;
 }
 .pricing-card:hover{
@@ -368,7 +390,23 @@ nav a:hover::after {
     margin-top: 10px;
     transition: transform 0.8s;
 }
+.pricing-card-top button {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: transform 0.8s;
+}
 .pricing-card button:hover {
+    background: white;
+    color: #000000;
+    border: none;
+}
+.pricing-card-top button:hover {
     background: white;
     color: #000000;
     border: none;
@@ -387,4 +425,5 @@ nav a:hover::after {
 }
 hr{
     margin-bottom: 5px;
+    margin-top: 5px;
 }

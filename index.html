@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -23,35 +23,38 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#" class="a">Contact</a></li>
+                <li><a onclick="scrollToPricing()" class="a">Pricing</a></li>
+                <li><a href="#" class="a"><i class="fa-solid fa-house"></i>Contact</a></li>
                 <li><a href="#" class="a">About Us</a></li>
                 <li><a href="#" class="work-btn">Our Work</a></li>
             </ul>
         </nav>
     </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="glitch-text">XIONOVA</h1><br>
-            <h2>Imagine. <span class="highlight">Create.</span> Elevate.</h2>
-            <p>Transform your ideas into reality with our innovative software solutions.<br> From sleek designs to powerful applications, we craft technology<br> that drives success.
-            Let's build something extrodinory!</p>
-        </div>
+    <section class="landing">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="glitch-text">XIONOVA</h1><br>
+                <h2>Imagine. <span class="highlight">Create.</span> Elevate.</h2>
+                <p>Transform your ideas into reality with our innovative software solutions.<br> From sleek designs to powerful applications, we craft technology<br> that drives success.
+                Let's build something extrodinory!</p>
+            </div>
+        </section>
+    
+    
+        <section class="down">
+            <div class="down-logo">XionovaStudio™</div>
+            <button class="cta-btn" onclick="scrollToSection()">Get Started</button>
+            <div class="social-icons">
+                <a href="#"><img src="Photos/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="Photos/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="Photos/x.png" alt="X"></a>
+                <a href="#"><img src="Photos/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </section>
     </section>
+    
 
-
-    <section class="down">
-        <div class="down-logo">XionovaStudio™</div>
-        <button class="cta-btn">Get Started</button>
-        <div class="social-icons">
-            <a href="#"><img src="Photos/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="Photos/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="Photos/x.png" alt="X"></a>
-            <a href="#"><img src="Photos/linkedin.png" alt="LinkedIn"></a>
-        </div>
-    </section>
-
-    <section class="services">
+    <section class="services" id="services">
         <h2>Our Services</h2>
         <div class="services-container">
             <div class="service-card-1">
@@ -164,8 +167,9 @@
             </div>
         </div>
     </section>
-
-<section class="pricing"> <h2>PRICING</h2>
+    
+<section class="pricing" id="pricing"> 
+    <h2>PRICING</h2>
 
     <div class="buttons">
         <button onclick="showPricing(0)" id="btn-0">Web Development</button>
@@ -175,20 +179,20 @@
         <button onclick="showPricing(4)" id="btn-4">Branding</button>
         <button onclick="showPricing(5)" id="btn-5">Product Mockup</button>
     </div>
-
+    
  <div id="pricing-sections">
      <!-- Web Development Pricing -->
         <div class="pricing-container" id="pricing-0">
             <div class="pricing-card"><h3>Basic</h3><p>$100</p> 
             <ul class="features">
-                <li>✔️1 Web Page</li>
-                <li>✔️Responsive Design</li>
-                <li>✔️SEO Optimized</li>
+                <li><i class="fa-solid fa-circle-check"></i>1 Web Page</li>
+                <li>Responsive Design</li>
+                <li>SEO Optimized</li>
             </ul>
             <button>Get Started</button></div>
-            <div class="pricing-card"><h3>Standard</h3><p>$200</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$200</p><hr>
                 <ul class="features">
-                    <li>5 Web Pages</li>
+                    <li><i class='bx bx-user'></i>5 Web Pages</li>
                     <li>Responsive Design</li>
                     <li>SEO Optimized</li>
                     <li>Content Management</li>
@@ -213,7 +217,7 @@
                     <li>App Store Support</li>
                 </ul>
                 <button>Get Started</button></div>
-            <div class="pricing-card"><h3>Standard</h3><p>$250</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$250</p>
                 <ul class="features">
                     <li>5 App Screens</li>
                     <li>Responsive Design</li>
@@ -237,7 +241,7 @@
                     <li>Responsive Design</li>
                     <li>Basic UI Elements</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card"><h3>Standard</h3><p>$220</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$220</p>
                 <ul class="features">
                     <li>3 Design Mockups</li>
                     <li>Responsive Design</li>
@@ -260,7 +264,7 @@
                     <li>Basic Textures</li>
                     <li>Static Rendering</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card"><h3>Standard</h3><p>$200</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$200</p>
                 <ul class="features">
                     <li>3 3D Models</li>
                     <li>Detailed Textures</li>
@@ -281,7 +285,7 @@
                     <li>Color Palette</li>
                     <li>Basic Branding Guide</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card"><h3>Standard</h3><p>$250</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$250</p>
                 <ul class="features">
                     <li>Logo Design</li>
                     <li>Color Palette</li>
@@ -305,7 +309,7 @@
                     <li>Basic Design</li>
                     <li>High-Resolution Image</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card"><h3>Standard</h3><p>$220</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$220</p>
                 <ul class="features">
                     <li>3 Product Mockups</li>
                     <li>Advanced Design</li>
