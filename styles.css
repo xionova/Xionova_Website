@@ -177,7 +177,6 @@ nav a:hover::after {
 
 .services {
     padding: 10rem;
-    text-align: center;
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
@@ -186,6 +185,7 @@ nav a:hover::after {
     font-family:'Saiba', sans-serif ;
     font-size: 36px;
     margin-bottom: 40px;
+    text-align: center;
 }
 .services-container {
     display: grid;
@@ -207,6 +207,7 @@ nav a:hover::after {
     margin-top: 15px;
    
 }
+
 .services .service-number {
     font-size: 30px;
     background: #9DFF00;
@@ -353,6 +354,9 @@ nav a:hover::after {
     display: none; /* Initially hide all sections */
     gap: 20px;
 }
+.pricing-container h3{
+    font-size: 15px;
+}
 .pricing-container i{
     margin-right: 2rem;
 }
@@ -424,6 +428,9 @@ nav a:hover::after {
     background: white;
     color: #000000;
     border: none;
+}
+.pricing-container h3,p{
+    text-align: left;
 }
 .features {
     list-style: none;
