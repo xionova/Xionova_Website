@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#000000">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore our diverse pricing plans for Web Development, App Development, UI/UX Design, 3D Modeling, Branding, and Product Mockup services. Find the perfect package for your project needs with detailed features and affordable rates. Get started today!">
-    <title>XionovaStudio™</title>
-    <link href="https://fonts.cdnfonts.com/css/saiba-45" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="Photos/fav.png">
-    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#000000">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore our diverse pricing plans for Web Development, App Development, UI/UX Design, 3D Modeling, Branding, and Product Mockup services. Find the perfect package for your project needs with detailed features and affordable rates. Get started today!">
+        <title>XionovaStudio™</title>
+        
+        <!-- Fonts -->
+        <link href="https://fonts.cdnfonts.com/css/saiba-45" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+        
+        <!-- Favicon -->
+        <link rel="icon" href="Photos/fav.png" type="image/png">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- Manifest -->
+        <link rel="manifest" href="manifest.json">
+    </head>
+    
 <body>
 
     <header>
@@ -23,8 +35,8 @@
         </div>
         <nav>
             <ul>
-                <li><a onclick="scrollToPricing()" class="a">Pricing</a></li>
-                <li><a href="#" class="a"><i class="fa-solid fa-house"></i>Contact</a></li>
+                <li><a href="#" onclick="scrollToPricing()" class="a">Pricing</a></li>
+                <li><a href="#" class="a">Contact</a></li>
                 <li><a href="#" class="a">About Us</a></li>
                 <li><a href="#" class="work-btn">Our Work</a></li>
             </ul>
@@ -42,8 +54,8 @@
     
     
         <section class="down">
-            <div class="down-logo">XionovaStudio™</div>
-            <button class="cta-btn" onclick="scrollToSection()">Get Started</button>
+            <div class="down-logo"></i>XionovaStudio™</div>
+            <button class="cta-btn" onclick="scrollToSection()">Get Started <i class="fa-solid fa-arrow-right"></i></button>
             <div class="social-icons">
                 <a href="#"><img src="Photos/facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="Photos/instagram.png" alt="Instagram"></a>
@@ -52,7 +64,8 @@
             </div>
         </section>
     </section>
-    
+
+    <button id="backToTop" class="back-to-top"><img src="Photos/up.png" alt=""></button>
 
     <section class="services" id="services">
         <h2>Our Services</h2>
@@ -183,145 +196,148 @@
  <div id="pricing-sections">
      <!-- Web Development Pricing -->
         <div class="pricing-container" id="pricing-0">
-            <div class="pricing-card"><h3>Basic</h3><p>$100</p> 
+            <div class="pricing-card"><h3>Basic</h3><p>$100</p><hr> 
             <ul class="features">
-                <li><i class="fa-solid fa-circle-check"></i>1 Web Page</li>
-                <li>Responsive Design</li>
-                <li>SEO Optimized</li>
+                <li><i class="fa-solid fa-circle-check"></i>3 Web Page</li>
+                <li><i class="fa-solid fa-circle-check"></i>Responsive Design</li>
+                <li><i class="fa-solid fa-circle-check"></i>SEO Optimized</li>
+                <li><i class="fa-solid fa-circle-xmark"></i>what we dont give</li>
+                <li><i class="fa-solid fa-circle-xmark"></i>what we dont give</li>
             </ul>
             <button>Get Started</button></div>
             <div class="pricing-card-top"><h3>Standard</h3><p>$200</p><hr>
                 <ul class="features">
-                    <li><i class='bx bx-user'></i>5 Web Pages</li>
-                    <li>Responsive Design</li>
-                    <li>SEO Optimized</li>
-                    <li>Content Management</li>
+                    <li><i class="fa-solid fa-circle-check"></i>5 Web Pages</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Responsive Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>SEO Optimized</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Content Management</li>
                 </ul>
                 <button>Get Started</button></div>
-            <div class="pricing-card"><h3>Premium</h3><p>$300</p>
+            <div class="pricing-card"><h3>Premium</h3><p>$300</p><hr>
                 <ul class="features">
-                    <li>Unlimited Pages</li>
-                    <li>Responsive Design</li>
-                    <li>SEO Optimized</li>
-                    <li>Advanced Analytics</li>
-                    <li>Priority Support</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Unlimited Pages</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Responsive Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>SEO Optimized</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Advanced Analytics</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Priority Support</li>
                 </ul>
-                <button>Get Started</button></div>
+                <button>Get Started</button>
+            </div>
         </div>
         <!-- App Development Pricing -->
         <div class="pricing-container" id="pricing-1">
-            <div class="pricing-card"><h3>Basic</h3><p>$150</p>
+            <div class="pricing-card"><h3>Basic</h3><p>$150</p><hr>
                 <ul class="features">
-                    <li>1 App Screen</li>
-                    <li>Responsive Design</li>
-                    <li>App Store Support</li>
+                    <li><i class="fa-solid fa-circle-check"></i>1 App Screen</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Responsive Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>App Store Support</li>
                 </ul>
                 <button>Get Started</button></div>
-            <div class="pricing-card-top"><h3>Standard</h3><p>$250</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$250</p><hr>
                 <ul class="features">
-                    <li>5 App Screens</li>
-                    <li>Responsive Design</li>
-                    <li>App Store Support</li>
-                    <li>Push Notifications</li>
+                    <li><i class="fa-solid fa-circle-check"></i>5 App Screens</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Responsive Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>App Store Support</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Push Notifications</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card"><h3>Premium</h3><p>$350</p>
+            <div class="pricing-card"><h3>Premium</h3><p>$350</p><hr>
                 <ul class="features">
-                    <li>Unlimited App Screens</li>
-                    <li>Responsive Design</li>
-                    <li>App Store Support</li>
-                    <li>Push Notifications</li>
-                    <li>Real-time Sync</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Unlimited App Screens</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Responsive Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>App Store Support</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Push Notifications</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Real-time Sync</li>
                 </ul><button>Get Started</button></div>
         </div>
         <!-- UI/UX Design Pricing -->
         <div class="pricing-container" id="pricing-2">
-            <div class="pricing-card"><h3>Basic</h3><p>$120</p>
+            <div class="pricing-card"><h3>Basic</h3><p>$120</p><hr>
                 <ul class="features">
-                    <li>1 Design Mockup</li>
-                    <li>Responsive Design</li>
-                    <li>Basic UI Elements</li>
+                    <li><i class="fa-solid fa-circle-check"></i>1 Design Mockup</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Responsive Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Basic UI Elements</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card-top"><h3>Standard</h3><p>$220</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$220</p><hr>
                 <ul class="features">
-                    <li>3 Design Mockups</li>
-                    <li>Responsive Design</li>
-                    <li>Advanced UI Elements</li>
-                    <li>Prototype Creation</li>
+                    <li><i class="fa-solid fa-circle-check"></i>3 Design Mockups</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Responsive Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Advanced UI Elements</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Prototype Creation</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card"><h3>Premium</h3><p>$320</p>
+            <div class="pricing-card"><h3>Premium</h3><p>$320</p><hr>
                 <ul class="features">
-                    <li>Unlimited Design Mockups</li>
-                    <li>Responsive Design</li>
-                    <li>Advanced UI/UX Elements</li>
-                    <li>Prototype & User Testing</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Unlimited Design Mockups</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Responsive Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Advanced UI/UX Elements</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Prototype & User Testing</li>
                 </ul><button>Get Started</button></div>
         </div>
         <!-- 3D Modeling Pricing -->
         <div class="pricing-container" id="pricing-3">
-            <div class="pricing-card"><h3>Basic</h3><p>$100</p>
+            <div class="pricing-card"><h3>Basic</h3><p>$100</p><hr>
                 <ul class="features">
-                    <li>1 3D Model</li>
-                    <li>Basic Textures</li>
-                    <li>Static Rendering</li>
+                    <li><i class="fa-solid fa-circle-check"></i>1 3D Model</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Basic Textures</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Static Rendering</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card-top"><h3>Standard</h3><p>$200</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$200</p><hr>
                 <ul class="features">
-                    <li>3 3D Models</li>
-                    <li>Detailed Textures</li>
-                    <li>Static & Dynamic Rendering</li>
+                    <li><i class="fa-solid fa-circle-check"></i>3 3D Models</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Detailed Textures</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Static & Dynamic Rendering</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card"><h3>Premium</h3><p>$300</p>
+            <div class="pricing-card"><h3>Premium</h3><p>$300</p><hr>
                 <ul class="features">
-                    <li>Unlimited 3D Models</li>
-                    <li>Photorealistic Textures</li>
-                    <li>Real-time Rendering & Animation</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Unlimited 3D Models</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Photorealistic Textures</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Real-time Rendering & Animation</li>
                 </ul><button>Get Started</button></div>
         </div>
         <!-- Branding Pricing -->
         <div class="pricing-container" id="pricing-4">
-            <div class="pricing-card"><h3>Basic</h3><p>$150</p>
+            <div class="pricing-card"><h3>Basic</h3><p>$150</p><hr>
                 <ul class="features">
-                    <li>Logo Design</li>
-                    <li>Color Palette</li>
-                    <li>Basic Branding Guide</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Logo Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Color Palette</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Basic Branding Guide</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card-top"><h3>Standard</h3><p>$250</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$250</p><hr>
                 <ul class="features">
-                    <li>Logo Design</li>
-                    <li>Color Palette</li>
-                    <li>Branding Guide</li>
-                    <li>Social Media Templates</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Logo Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Color Palette</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Branding Guide</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Social Media Templates</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card"><h3>Premium</h3><p>$350</p>
+            <div class="pricing-card"><h3>Premium</h3><p>$350</p><hr>
                 <ul class="features">
-                    <li>Logo Design</li>
-                    <li>Complete Branding Guide</li>
-                    <li>Business Card Design</li>
-                    <li>Social Media & Print Templates</li>
-                    <li>Branding Strategy</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Logo Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Complete Branding Guide</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Business Card Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Social Media & Print Templates</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Branding Strategy</li>
                 </ul><button>Get Started</button></div>
         </div>
         <!-- Product Mockup Pricing -->
         <div class="pricing-container" id="pricing-5">
-            <div class="pricing-card"><h3>Basic</h3><p>$120</p>
+            <div class="pricing-card"><h3>Basic</h3><p>$120</p><hr>
                 <ul class="features">
-                    <li>1 Product Mockup</li>
-                    <li>Basic Design</li>
-                    <li>High-Resolution Image</li>
+                    <li><i class="fa-solid fa-circle-check"></i>1 Product Mockup</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Basic Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>High-Resolution Image</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card-top"><h3>Standard</h3><p>$220</p>
+            <div class="pricing-card-top"><h3>Standard</h3><p>$220</p><hr>
                 <ul class="features">
-                    <li>3 Product Mockups</li>
-                    <li>Advanced Design</li>
-                    <li>High-Resolution Image</li>
-                    <li>Multiple Angles</li>
+                    <li><i class="fa-solid fa-circle-check"></i>3 Product Mockups</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Advanced Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>High-Resolution Image</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Multiple Angles</li>
                 </ul><button>Get Started</button></div>
-            <div class="pricing-card"><h3>Premium</h3><p>$320</p>
+            <div class="pricing-card"><h3>Premium</h3><p>$320</p><hr>
                 <ul class="features">
-                    <li>Unlimited Product Mockups</li>
-                    <li>Advanced & Custom Designs</li>
-                    <li>High-Resolution Image</li>
-                    <li>Multiple Angles & 3D View</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Unlimited Product Mockups</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Advanced & Custom Designs</li>
+                    <li><i class="fa-solid fa-circle-check"></i>High-Resolution Image</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Multiple Angles & 3D View</li>
                 </ul><button>Get Started</button></div>
         </div>
     </div>

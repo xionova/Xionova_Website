@@ -69,11 +69,13 @@ nav .a::after {
     height: 4px;
     background-color: rgb(255, 255, 255);
     transition: width 0.3s ease-out, left 0.3s ease-out;
+    cursor: pointer;
   }
 
 nav a:hover::after {
     width: 100%;
     left: 0;
+    cursor: pointer;
 }
 
 .work-btn:hover{
@@ -120,7 +122,7 @@ nav a:hover::after {
 .cta-btn {
     background: black;
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: 2px solid rgb(0, 0, 0);
     font-size: 16px;
     border-radius: 100px;
@@ -128,7 +130,6 @@ nav a:hover::after {
     transition: 0.3s;
     margin-bottom: 40px;
 }
-
 .cta-btn:hover {
     background: white;
     color: black;
@@ -352,9 +353,16 @@ nav a:hover::after {
     display: none; /* Initially hide all sections */
     gap: 20px;
 }
-
+.pricing-container i{
+    margin-right: 2rem;
+}
 .pricing-container.active {
     display: flex; /* Show the active section */
+}
+.pricing-container ul{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: left;
 }
 
 .pricing-card {
@@ -365,6 +373,7 @@ nav a:hover::after {
     width: 350px;
     height: 400px;
     margin-top: 50px;
+    text-align: center;
     transition: ease-in transform 0.3s;
 }
 .pricing-card-top {
@@ -374,14 +383,17 @@ nav a:hover::after {
     border-radius: 10px;
     width: 400px;
     height: 500px;
+    text-align: center;
     transition: ease-in transform 0.3s;
 }
 .pricing-card:hover{
     transform: scale(1.05)
 }
-
+.pricing-card-top:hover{
+    transform: scale(1.05)
+}
 .pricing-card button {
-    background: rgb(0, 0, 0);
+    background: transparent;
     color: rgb(255, 255, 255);
     padding: 10px;
     border: 2px solid white;
@@ -399,6 +411,8 @@ nav a:hover::after {
     border-radius: 50px;
     font-size: 20px;
     margin-top: 10px;
+    margin-bottom: 10px;
+    
     transition: transform 0.8s;
 }
 .pricing-card button:hover {
@@ -421,9 +435,30 @@ nav a:hover::after {
 }
 
 .features li {
-    margin: 8px 0;
+    margin: 10px 0;
 }
 hr{
     margin-bottom: 5px;
     margin-top: 5px;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+.back-to-top img{
+    width: 1.5rem;
+}
+.back-to-top:hover {
+    background-color: #333;
 }
