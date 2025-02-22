@@ -425,11 +425,13 @@ nav a:hover::after {
 
 .pricing-card {
     background-image: url('Photos/pricingBackground.png');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 20px;
     border-radius: 10px;
     width: 350px;
-    height: 400px;
+    height: 500px;
     margin-top: 50px;
     text-align: center;
     transition: ease-in transform 0.3s;
@@ -437,11 +439,13 @@ nav a:hover::after {
 
 .pricing-card-top {
     background-image: url('Photos/pricingBackground.png');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 20px;
     border-radius: 10px;
     width: 400px;
-    height: 500px;
+    height: 600px;
     text-align: center;
     transition: ease-in transform 0.3s;
 }
