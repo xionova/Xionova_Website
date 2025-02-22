@@ -24,15 +24,24 @@ body {
 
 /* Navigation Bar */
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px 55px;
+    background: rgba(0, 0, 0, 0.726);
+    z-index: 1;
+    width: 100%;
+    height: 6rem;
 }
+
 .logo img {
-    width: 55px; /* Adjust the width of the logo */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Remove any inline spacing */
+    width: 50px;
+    /* Adjust the width of the logo */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
+    /* Remove any inline spacing */
 }
 
 nav ul {
@@ -54,7 +63,8 @@ nav a {
     border-radius: 20px;
     text-decoration: none;
 }
-nav .a{
+
+nav .a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
@@ -70,7 +80,7 @@ nav .a::after {
     background-color: rgb(255, 255, 255);
     transition: width 0.3s ease-out, left 0.3s ease-out;
     cursor: pointer;
-  }
+}
 
 nav a:hover::after {
     width: 100%;
@@ -78,14 +88,15 @@ nav a:hover::after {
     cursor: pointer;
 }
 
-.work-btn:hover{
+.work-btn:hover {
     background: white;
     color: #000000;
-    text-decoration:none;
+    text-decoration: none;
 }
+
 /* Hero Section */
 
-.landing{
+.landing {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -98,6 +109,7 @@ nav a:hover::after {
 }
 
 .hero-content h1 {
+    margin-top: 5rem;
     font-size: 150px;
     font-family: 'Saiba', sans-serif;
     text-transform: uppercase;
@@ -106,22 +118,23 @@ nav a:hover::after {
 }
 
 .hero-content h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
 }
+
 .highlight {
     color: #000000;
     text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white;
 }
 
 .hero-content p {
-    font-size: 12px;
+    font-size: 15px;
     margin: 20px 0;
 }
 
 .cta-btn {
-    background: black;
-    color: white;
+    background: rgb(255, 187, 0);
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: 2px solid rgb(0, 0, 0);
     font-size: 16px;
@@ -130,6 +143,7 @@ nav a:hover::after {
     transition: 0.3s;
     margin-bottom: 40px;
 }
+
 .cta-btn:hover {
     background: white;
     color: black;
@@ -176,47 +190,56 @@ nav a:hover::after {
 /*Services*/
 
 .services {
+    height: 100vh;
     padding: 10rem;
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
 }
+
 .services h2 {
-    font-family:'Saiba', sans-serif ;
+    font-family: 'Saiba', sans-serif;
     font-size: 36px;
     margin-bottom: 40px;
     text-align: center;
 }
+
 .services-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1rem;
     justify-items: center;
     margin: auto;
 }
+
 .service-images {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 15px;
 }
+
 .service-images img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-top: 15px;
-   
+
 }
 
 .services .service-number {
     font-size: 30px;
     background: #9DFF00;
-    border-radius: 50%; /* Makes it a perfect circle */
-    display: inline-block; /* Prevents full-width background */
-    width: 40px; /* Controls circle size */
+    border-radius: 50%;
+    /* Makes it a perfect circle */
+    display: inline-block;
+    /* Prevents full-width background */
+    width: 40px;
+    /* Controls circle size */
     height: 40px;
     text-align: center;
-    line-height: 40px; /* Centers the number inside */
+    line-height: 40px;
+    /* Centers the number inside */
     font-family: 'Saiba', sans-serif;
 }
 
@@ -226,10 +249,11 @@ nav a:hover::after {
     border-radius: 10px;
     padding: 10px;
     width: 100%;
-    height:max-content;
+    height: max-content;
     max-width: 300px;
     transition: transform 0.3s;
 }
+
 .service-card-1 {
     position: relative;
     background: #ffffff;
@@ -238,55 +262,67 @@ nav a:hover::after {
     width: 100%;
     max-width: 300px;
     border: 2px solid black;
-    border-radius: 10px; /* Normal rounded corners */
+    border-radius: 10px;
+    /* Normal rounded corners */
     transition: transform 0.3s;
 }
+
 .content {
     padding: 10px 30px;
 }
-.content h1{
+
+.content h1 {
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .service-card h3 {
     margin-top: 20px;
     font-size: 20px;
     margin-bottom: 15px;
     text-align: left;
 }
+
 .service-card-1 h3 {
     margin-top: 20px;
     font-size: 20px;
     text-align: left;
     margin-bottom: 15px;
 }
+
 .service-card p {
     font-size: 12px;
     text-align: left;
     text-justify: inter-word;
 }
+
 .service-card:hover {
     transform: scale(1.05);
 }
+
 .service-card-1 p {
     font-size: 12px;
     text-align: left;
     text-justify: inter-word;
 }
+
 .service-card-1:hover {
     transform: scale(1.05);
 }
+
 @media (max-width: 973px) {
     .services-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 480px) {
     .services-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 .our-work-btn {
     background: #9DFF00;
     color: black;
@@ -297,19 +333,30 @@ nav a:hover::after {
     cursor: pointer;
     transition: 0.3s;
 }
-
+.our-work-btn1 {
+    background: #9DFF00;
+    color: black;
+    float: inline-start;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 /*pricing*/
-.pricing h2{
-    font-family:'Saiba', sans-serif ;
+.pricing h2 {
+    font-family: 'Saiba', sans-serif;
     font-size: 40px;
     margin-bottom: 40px;
     color: black;
     text-align: center;
 }
+
 .pricing {
     padding: 20px;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
 }
 
 .buttons {
@@ -338,6 +385,7 @@ nav a:hover::after {
     color: white;
     border: none;
 }
+
 .pricing p {
     font-size: 40px;
     margin-top: 10px;
@@ -351,19 +399,25 @@ nav a:hover::after {
 }
 
 .pricing-container {
-    display: none; /* Initially hide all sections */
+    display: none;
+    /* Initially hide all sections */
     gap: 20px;
 }
-.pricing-container h3{
+
+.pricing-container h3 {
     font-size: 15px;
 }
-.pricing-container i{
+
+.pricing-container i {
     margin-right: 2rem;
 }
+
 .pricing-container.active {
-    display: flex; /* Show the active section */
+    display: flex;
+    /* Show the active section */
 }
-.pricing-container ul{
+
+.pricing-container ul {
     margin-top: 3rem;
     margin-bottom: 3rem;
     text-align: left;
@@ -380,6 +434,7 @@ nav a:hover::after {
     text-align: center;
     transition: ease-in transform 0.3s;
 }
+
 .pricing-card-top {
     background-image: url('Photos/pricingBackground.png');
     color: white;
@@ -390,12 +445,15 @@ nav a:hover::after {
     text-align: center;
     transition: ease-in transform 0.3s;
 }
-.pricing-card:hover{
+
+.pricing-card:hover {
     transform: scale(1.05)
 }
-.pricing-card-top:hover{
+
+.pricing-card-top:hover {
     transform: scale(1.05)
 }
+
 .pricing-card button {
     background: transparent;
     color: rgb(255, 255, 255);
@@ -406,6 +464,7 @@ nav a:hover::after {
     margin-top: 10px;
     transition: transform 0.8s;
 }
+
 .pricing-card-top button {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -416,22 +475,27 @@ nav a:hover::after {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    
+
     transition: transform 0.8s;
 }
+
 .pricing-card button:hover {
     background: white;
     color: #000000;
     border: none;
 }
+
 .pricing-card-top button:hover {
     background: white;
     color: #000000;
     border: none;
 }
-.pricing-container h3,p{
+
+.pricing-container h3,
+p {
     text-align: left;
 }
+
 .features {
     list-style: none;
     margin-bottom: 20px;
@@ -444,10 +508,12 @@ nav a:hover::after {
 .features li {
     margin: 10px 0;
 }
-hr{
+
+hr {
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
 .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -460,12 +526,15 @@ hr{
     border-radius: 50%;
     font-size: 24px;
     cursor: pointer;
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     transition: opacity 0.3s ease;
 }
-.back-to-top img{
+
+.back-to-top img {
     width: 1.5rem;
 }
+
 .back-to-top:hover {
     background-color: #333;
 }

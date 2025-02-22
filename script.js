@@ -4,6 +4,30 @@ function scrollToSection() {
 function scrollToPricing() {
     document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
 }
+function scrollToPricing0() {
+    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+    showPricing(0);
+}
+function scrollToPricing1() {
+    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+    showPricing(1);
+}
+function scrollToPricing2() {
+    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+    showPricing(2);
+}
+function scrollToPricing3() {
+    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+    showPricing(3);
+}
+function scrollToPricing4() {
+    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+    showPricing(4);
+}
+function scrollToPricing5() {
+    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+    showPricing(5);
+}
 
 //Pricing section
 function showPricing(index) {
