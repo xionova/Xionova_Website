@@ -3,11 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Font Awesome Test</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Background Music</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #mute-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #000;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <i class="fa-solid fa-check"></i> Check Icon
-    <i class="fa-brands fa-twitter"></i> Twitter Icon
+
+    <button id="mute-btn">Unmute</button>
+
+    <div id="player"></div>
+
+    <script>
+        let player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '0',
+                width: '0',
+                videoId: 'PpJQZH9B1Y4', 
+                playerVars: {
+                    autoplay: 1,  // Autoplay enabled
+                    loop: 1,
+                    playlist: 'PpJQZH9B1Y4', // Required for looping
+                    controls: 0,
+                    showinfo: 0,
+                    modestbranding: 1,
+                    mute: 1 // Start muted to bypass autoplay restrictions
+                },
+                events: {
+                    onReady: function (event) {
+                        event.target.playVideo();
+                    }
+                }
+            });
+        }
+
+        document.getElementById('mute-btn').addEventListener('click', function () {
+            if (player.isMuted()) {
+                player.unMute();
+                this.textContent = "Mute";
+            } else {
+                player.mute();
+                this.textContent = "Unmute";
+            }
+        });
+
+        let tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        let firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+
 </body>
 </html>

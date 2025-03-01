@@ -50,13 +50,16 @@ function showPricing(index) {
 showPricing(0);
 
 const backToTopButton = document.getElementById("backToTop");
+const music = document.getElementById("mute-btn");
 
 // Show the button when user scrolls down
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 300) {
         backToTopButton.style.display = "block";
+        music.style.display = "block";
     } else {
         backToTopButton.style.display = "none";
+        music.style.display = "none";
     }
 };
 
@@ -64,3 +67,44 @@ window.onscroll = function () {
 backToTopButton.onclick = function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+let player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '0',
+                width: '0',
+                videoId: 'PpJQZH9B1Y4', 
+                playerVars: {
+                    autoplay: 1,  // Autoplay enabled
+                    loop: 1,
+                    playlist: 'PpJQZH9B1Y4', // Required for looping
+                    controls: 0,
+                    showinfo: 0,
+                    modestbranding: 1,
+                    mute: 1 // Start muted to bypass autoplay restrictions
+                },
+                events: {
+                    onReady: function (event) {
+                        event.target.playVideo();
+                    }
+                }
+            });
+        }
+
+        document.getElementById('mute-btn').addEventListener('click', function () {
+            let icon = this.querySelector("i");
+            if (player.isMuted()) {
+                player.unMute();
+                this.appendChild(icon);
+                icon.className = "fa fa-volume-up"; // Change icon to volume up
+            } else {
+                player.mute();
+                this.appendChild(icon);
+                icon.className = "fa fa-volume-off"; // Change icon to volume off
+            }
+        });
+
+        let tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        let firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);

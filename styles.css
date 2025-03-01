@@ -22,6 +22,22 @@ body {
     background-position: center 10%;
 }
 
+#mute-btn {
+    position: fixed;
+    bottom: 20px;
+    height: 50px;
+    left: 20px;
+    color: black;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+
+
 /* Navigation Bar */
 header {
     position: fixed;
