@@ -452,6 +452,14 @@ nav a:hover::after {
     text-align: center;
     transition: ease-in transform 0.3s;
 }
+.features i.fa-circle-check {
+    color: green; /* Green for included features */
+}
+
+.features i.fa-circle-xmark {
+    color: red; /* Red for not included features */
+}
+
 
 .pricing-card-top {
     background-image: url('Photos/pricingBackground.png');
